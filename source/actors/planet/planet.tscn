@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://actors/planet/planet_new_behavior.gd" type="Script" id=1]
 [ext_resource path="res://screens/GUI/under.png" type="Texture" id=2]
 [ext_resource path="res://screens/GUI/fill.png" type="Texture" id=3]
-[ext_resource path="res://actors/planet/tapometer_behavior.gd" type="Script" id=4]
-[ext_resource path="res://actors/planet/samples.tres" type="SampleLibrary" id=5]
+[ext_resource path="res://actors/planet/samples.tres" type="SampleLibrary" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -143,7 +142,9 @@ tracks/1/keys = {
 "values": [ 54.5617, 64.5283 ]
 }
 
-[node name="planet" type="Node2D"]
+[node name="planet" type="Node2D" groups=[
+"planet",
+]]
 
 script/script = ExtResource( 1 )
 needed_tics = 10
@@ -175,7 +176,6 @@ texture/over = null
 texture/progress = ExtResource( 3 )
 radial_fill/fill_degrees = 360.0
 radial_fill/center_offset = Vector2( 0, 0 )
-script/script = ExtResource( 4 )
 
 [node name="sprites" type="Node2D" parent="."]
 
@@ -205,13 +205,6 @@ _update_shape_index = 0
 __meta__ = {
 "_edit_lock_": true
 }
-
-[node name="timer" type="Timer" parent="."]
-
-process_mode = 1
-wait_time = 2.0
-one_shot = true
-autostart = false
 
 [node name="animator" type="AnimationPlayer" parent="."]
 
@@ -243,7 +236,7 @@ params/attenuation/min_distance = 1.0
 params/attenuation/max_distance = 2048.0
 params/attenuation/distance_exp = 1.0
 config/polyphony = 1
-config/samples = ExtResource( 5 )
+config/samples = ExtResource( 4 )
 config/pitch_random = 0.0
 
 [connection signal="input_event" from="area" to="." method="_on_area_input_event"]
@@ -251,8 +244,6 @@ config/pitch_random = 0.0
 [connection signal="mouse_enter" from="area" to="." method="_on_area_mouse_enter"]
 
 [connection signal="mouse_exit" from="area" to="." method="_on_area_mouse_exit"]
-
-[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
 
 [connection signal="tween_complete" from="tween" to="." method="_on_tween_tween_complete"]
 

@@ -183,9 +183,13 @@ tracks/16/keys = {
 [sub_resource type="CircleShape2D" id=2]
 
 custom_solver_bias = 0.0
-radius = 44.5086
+radius = 80.0
 
 [node name="planet" instance=ExtResource( 1 )]
+
+[node name="sprites" parent="."]
+
+transform/scale = Vector2( 1.9, 1.9 )
 
 [node name="layer" type="Sprite" parent="sprites"]
 

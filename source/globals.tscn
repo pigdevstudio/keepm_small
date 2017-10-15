@@ -6,6 +6,7 @@
 [node name="globals" type="Node"]
 
 script/script = ExtResource( 1 )
+clear_color = Color( 0, 0.0196078, 0.0862745, 1 )
 
 [node name="background_music" type="StreamPlayer" parent="."]
 
