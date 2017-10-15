@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=1]
+[gd_scene load_steps=27 format=1]
 
 [ext_resource path="res://screens/main_menu/main_menu.gd" type="Script" id=1]
 [ext_resource path="res://screens/GUI/GaroaHackerClubeBold.otf" type="DynamicFontData" id=2]
@@ -393,6 +393,69 @@ WindowDialog/fonts/title_font = null
 WindowDialog/icons/close = null
 WindowDialog/icons/close_hilite = null
 WindowDialog/styles/panel = null
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=11]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=12]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=14]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=15]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=16]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=18]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
 
 [sub_resource type="Animation" id=3]
 
@@ -2148,6 +2211,9 @@ margin/left = 0.0
 margin/top = 0.0
 margin/right = 204.0
 margin/bottom = 26.0
+custom_styles/hover = SubResource( 10 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 12 )
 custom_colors/font_color_disabled = Color( 1, 0.0546875, 0.0546875, 1 )
 custom_colors/font_color = Color( 0.533081, 0.296875, 1, 1 )
 custom_colors/font_color_hover = Color( 0.947815, 0.648438, 1, 1 )
@@ -2168,6 +2234,9 @@ margin/left = 0.0
 margin/top = 52.0
 margin/right = 204.0
 margin/bottom = 78.0
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/focus = SubResource( 15 )
 custom_colors/font_color_disabled = Color( 1, 0.0546875, 0.0546875, 1 )
 custom_colors/font_color = Color( 0.533081, 0.296875, 1, 1 )
 custom_colors/font_color_hover = Color( 0.947815, 0.648438, 1, 1 )
@@ -2188,6 +2257,9 @@ margin/left = 0.0
 margin/top = 104.0
 margin/right = 204.0
 margin/bottom = 130.0
+custom_styles/hover = SubResource( 16 )
+custom_styles/pressed = SubResource( 17 )
+custom_styles/focus = SubResource( 18 )
 custom_colors/font_color = Color( 0.533081, 0.296875, 1, 1 )
 custom_colors/font_color_hover = Color( 0.947815, 0.648438, 1, 1 )
 custom_colors/font_color_pressed = Color( 0.367188, 0.11618, 0.345617, 1 )

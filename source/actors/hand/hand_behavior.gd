@@ -5,13 +5,14 @@ onready var initial_pos = get_pos()
 var can_squeeze = false
 
 func back():
-	t.interpolate_property(self, "transform/pos", get_pos(), can_squeeze, 0.2, Tween.TRANS_LINEAR,\
-	Tween.EASE_IN)
+	t.interpolate_property(self, "transform/pos", get_pos(), can_squeeze, 0.2,\
+	Tween.TRANS_LINEAR, Tween.EASE_IN)
 	t.start()
 	can_squeeze = false
+
 func move_to( pos ):
-	t.interpolate_property(self, "transform/pos", get_pos(), pos, 0.2, Tween.TRANS_LINEAR,\
-	Tween.EASE_IN)
+	t.interpolate_method(self, "set_global_pos", get_global_pos(), pos, 0.2,\
+	Tween.TRANS_LINEAR, Tween.EASE_IN)
 	t.start()
 	can_squeeze = false
 
