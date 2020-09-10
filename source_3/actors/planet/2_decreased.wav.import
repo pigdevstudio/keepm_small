@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/2_decreased.wav-18c6b6a51bfc806ea49514787c34714f.sample"
+
+[deps]
+
+source_file="res://actors/planet/2_decreased.wav"
+dest_files=[ "res://.import/2_decreased.wav-18c6b6a51bfc806ea49514787c34714f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

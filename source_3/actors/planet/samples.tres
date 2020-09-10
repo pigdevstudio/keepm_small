@@ -1,0 +1,20 @@
+[gd_resource type="SampleLibrary" load_steps=3 format=1]
+
+[ext_resource path="res://actors/planet/1_increased.wav" type="Sample" id=1]
+[ext_resource path="res://actors/planet/2_decreased.wav" type="Sample" id=2]
+
+[resource]
+
+samples/grow = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 1 )
+}
+samples/shrink = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 2 )
+}
+
